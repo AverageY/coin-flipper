@@ -2,7 +2,7 @@
 
 using namespace std;
 string flip();
-int x;
+string x;
 
 
 int main()
@@ -10,19 +10,15 @@ int main()
     for(int i=0;i<10;++i){
     cout<<"Press 1 and enter"<<endl;
     cin>>x;
-    if(isalpha(x)==true){
-            cout<<"int pls"<<endl;
-
-
-    }
-    else if(x==1){
+    int z=stoi(x);
+    if(z==1){
         flip();
         cout<<"flipped"<<endl;
 
 
     }
 
-    else if(x!=1){
+    else {
         cout<<"try again"<<endl;
     }
 
@@ -47,4 +43,5 @@ string flip(){
     return ans;
 
 }
+
 
